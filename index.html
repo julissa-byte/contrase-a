@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Random Generador de Contraseña | proyecto | By JulissaDeFrias </title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Generador de Contraseña</h1>
+      <a href="https://instagram.com/julissadefria.s?utm_source=qr&igshid=NGExMmI2YTkyZg%3D%3D">By JulissaDeFrias</a>
+      <input
+        type="text"
+        placeholder="Haga clic en el botón para generar una contraseña "
+        id="display-password"
+      />
+      <div class="generate-container">
+        <select name="passwordLength" id="password-length">
+          <option value="0" selected disabled>Seleccionar longitud</option>
+          <option value="4">4</option>
+          <option value="6">6</option>
+          <option value="12">12</option>
+          <option value="18">18</option>
+          <option value="30">30</option>
+        </select>
+        <button onclick="randomPassword()">Generador de Contraseña</button>
+      </div>
+      <p id="error-info"></p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
